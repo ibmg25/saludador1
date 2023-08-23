@@ -1,5 +1,5 @@
 export class KBot {  
-    saludar(nombre, hora, genero) {
+    saludar(nombre, hora, genero, edad) {
       let saludo = "";
   
       if (hora >= 0 && hora < 12) 
@@ -9,10 +9,10 @@ export class KBot {
       else 
         saludo = "Buenas noches ";
 
-      if (genero == "M")
-        saludo += "Sr. ";
-      else if (genero == "F")
+      if (genero == "F")
         saludo += "Sra. ";
+      else if (edad >= 30)
+        saludo += "Sr. ";
 
       saludo += nombre;
       console.log(nombre);
