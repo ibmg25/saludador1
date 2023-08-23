@@ -12,5 +12,5 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
     const kbot = new KBot();
     console.log(horaActual);
-    div.innerHTML = "<p>" + kbot.saludar(nombre.value, horaActual, genero, edad, idioma) + "</p>";
+    div.innerHTML = "<p>" + kbot.saludar(nombre.value, horaActual, genero.value, edad.value, idioma.value) + "</p>";
   });
