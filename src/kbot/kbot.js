@@ -3,7 +3,7 @@ export class KBot {
       let saludo = "";
   
       if (hora >= 0 && hora < 12) {
-        saludo = "Buenos días ";
+        saludo = "Buenos dias ";
       } else if (hora >= 12 && hora < 19) {
         saludo = "Buenas tardes ";
       } else {
