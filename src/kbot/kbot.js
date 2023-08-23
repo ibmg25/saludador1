@@ -1,13 +1,16 @@
 export class KBot {  
-    saludar(nombre, hora, genero, edad) {
+    saludar(nombre, hora, genero, edad, idioma) {
       let saludo = "";
-  
+      let saludos = ["Buenos dias ", "Buenas tardes ", "Buenas noches ", "Good morning ", "Good afternoon ", "Good evening "];
+      let add = 0;
+      if (idioma == "EN")
+        add = add+3;
       if (hora >= 0 && hora < 12) 
-        saludo = "Buenos dias ";
+        saludo = saludos[0+add];
       else if (hora >= 12 && hora < 19) 
-        saludo = "Buenas tardes ";
+        saludo = saludos[1+add];
       else 
-        saludo = "Buenas noches ";
+        saludo = saludos[2+add];
 
       if (genero == "F")
         saludo += "Sra. ";

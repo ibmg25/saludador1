@@ -37,4 +37,10 @@ describe("Saludador", () => {
         expect(resultado).toEqual("Buenas tardes Juan");
     });
 
+    it("Saludar a Juan en la tarde en ingles", () => {
+        let kbot = new KBot();
+        let resultado = kbot.saludar("Juan", 16, "M", 25, "EN") 
+        expect(resultado).toEqual("Good afternoon Juan");
+    });
+
   });
