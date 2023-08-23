@@ -18,4 +18,16 @@ describe("Saludador", () => {
         let resultado = kbot.saludar("Juan", 21) 
         expect(resultado).toEqual("Buenas noches Juan");
     });
+
+    it("Saludar a Juan en la tarde", () => {
+        let kbot = new KBot();
+        let resultado = kbot.saludar("Juan", 16, "M") 
+        expect(resultado).toEqual("Buenas tardes Sr. Juan");
+    });
+
+    it("Saludar a Ana en la tarde", () => {
+        let kbot = new KBot();
+        let resultado = kbot.saludar("Ana", 16, "F") 
+        expect(resultado).toEqual("Buenas tardes Sra. Ana");
+    });
   });
